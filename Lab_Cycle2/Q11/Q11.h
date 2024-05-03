@@ -1,8 +1,10 @@
-#include <iostream>
-#include <stack>
+#include<iostream>
 using namespace std;
 
-class FactorialCalculator {
+template<typename T>
+class MergeSort {
 public:
-    int factorialWithStack(int n);
+    static void mergeSort(T* arr, int size);
+private:
+    static void merge(T* arr, int left, int middle, int right);
 };
